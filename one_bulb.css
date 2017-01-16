@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    max-width: 1170px;
+    margin: 0 auto; 
+}
+
+.logo {
+    padding-top: 40px;
+    width: 450px;    
+}
+
+p.border {
+    color: #62DCF1;
+}
+
+.yellowBox {
+    background-color: #FFD524;
+    max-width: 1170px;
+}
+
+h2 {
+    font-family: "din-2014";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 55px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 30px 40px;
+}
+
+h3 {
+    font-family: "din-2014-narrow",sans-serif;
+    font-weight: 300;
+    font-size: 38px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.circle {
+    max-width: 158px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+h4 {
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p.mission {
+    font-family: "din-2014",sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: .25px;
+    text-align: center;        
+}
+
+.l-wrap {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid-item {
+  width: calc((100% - 24px * 3) / 3);
+  width: calc((100% - 24px * 3) / 3);
+  margin-top: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+    
+
+@mixin clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content:'';
+  }
+}
